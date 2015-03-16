@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1>Event</h1>
+{% for event in events%}
+<div>
+<h2><a href="/events/get/{{event.id}}/">{{Event.event_text}}</a></h2>
+<p>{{event.body}}</p>
+</div>
+{% endfor %}
+</body>
+</html>

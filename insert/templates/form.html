@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+<form method='POST'  action=''>
+
+
+{% csrf_token %}
+{{form.as_p}}
+
+<br><br>
+<input type="submit">
+
+<input TYPE="button" VALUE="View All List"
+        onclick="window.location.href='http://127.0.0.1:8000/insert/all/'"> 
+
+</form>
+</body>
+</html>

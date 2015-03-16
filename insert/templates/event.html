@@ -1,0 +1,43 @@
+<html>
+<body>
+<Strong>Here is the List for all Available Event</Strong>
+<br></br>
+
+
+
+<table style="width:85%">
+ <tr>
+    <td>Event Name</td>
+    <td>Event Date</td>
+ </tr>
+
+
+{% for event in events %}
+
+<table style="width:100%">
+  <tr>
+    <td>{{event.event_text}}</td>
+    <td>{{event.pub_date}}</td> 
+  </tr>
+</table>
+
+{% endfor %}
+
+<br></br>
+<Strong>Here is the List for Event Exhibitors</Strong>
+
+{% for list in exhibitor %}
+<ol>
+	{{list.event}} <br></br>
+    {{list.company}}<br></br>
+    {{list.zip_code}}
+    {{list.city}}
+    {{list.country}}<br></br>
+    {{list.booth_no}}
+    {{list.hall_no}}
+</ol>
+#{% endfor %}
+
+
+</body>
+</html>
